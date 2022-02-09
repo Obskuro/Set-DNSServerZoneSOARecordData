@@ -33,9 +33,7 @@ if ($ResponsiblePerson) {$newsoa.RecordData.ResponsiblePerson = $ResponsiblePers
     Write-Verbose $("ResponsiblePerson changed from " + $oldsoa.RecordData.ResponsiblePerson + " to " + $newsoa.RecordData.ResponsiblePerson)}
 
 
-# $newsoa.RecordData
-
-#Set-DnsServerResourceRecord -OldInputObject $oldsoa -NewInputObject $newsoa -ZoneName $ZoneName -PassThru
+Set-DnsServerResourceRecord -OldInputObject $oldsoa -NewInputObject $newsoa -ZoneName $ZoneName -PassThru
 }
-Export-ModuleMember -Function Show-Calendar
+Export-ModuleMember -Function Set-DNSServerZoneSOARecordData -Alias Set-SOA
 
