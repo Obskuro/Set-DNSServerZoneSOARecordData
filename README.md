@@ -10,8 +10,8 @@ Comandlet for change RecordData in SOA record.
 
 ```Set-DNSServerZoneSOARecordData -ZoneName myzone.lo -RefreshInterval 900 -RetryDelay 600 -ExpireLimit 86400 -MinimumTimeToLive 3600 -PrimaryServer addc.myzone.lo -ResponsiblePerson hostmaster.myzone.lo```
 
-*-ZoneName* - mandatory parameter.
-Parameters *-RefreshInterval*, *-RetryDelay*, *-ExpireLimit*, *-MinimumTimeToLive* - in seconds.
+*-ZoneName* - mandatory parameter.  
+Parameters *-RefreshInterval*, *-RetryDelay*, *-ExpireLimit*, *-MinimumTimeToLive* - in seconds.  
 empty parameter(s) - ignored.
 
 You can use parameter *-Verbose* to see changes.
