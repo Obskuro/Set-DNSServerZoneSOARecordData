@@ -4,7 +4,7 @@ Comandlet for change RecordData in SOA record.
 
 ## For import
 
-```Invoke-WebRequest -OutFile ./Set-SOA.psm1 https://raw.githubusercontent.com/Obskuro/Set-DNSServerZoneSOARecordData/main/Set-SOA.psm1 ; Import-Module ./Set-SOA.psm1; Remove-Item ./Set-SOA.psm1```
+```Invoke-WebRequest -OutFile "$env:HOMEDRIVE\Program Files\WindowsPowerShell\Modules\Set-SOA.psm1" https://raw.githubusercontent.com/Obskuro/Set-DNSServerZoneSOARecordData/main/Set-SOA.psm1 ; Import-Module "$env:HOMEDRIVE\Program Files\WindowsPowerShell\Modules\Set-SOA.psm1"```
 
 ## For use
 

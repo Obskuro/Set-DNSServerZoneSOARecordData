@@ -16,7 +16,7 @@ Param (
 
 Write-Verbose $( "ZoneName:" + $ZoneName)
 
-$oldsoa = Get-DnsServerResourceRecord -ZoneName $ZoneName -Name “@” -RRType Soa
+$oldsoa = Get-DnsServerResourceRecord -ZoneName $ZoneName -Name "@" -RRType Soa
 $newsoa = $oldsoa.Clone()
 
 if ($RefreshInterval) {$newsoa.RecordData.RefreshInterval = New-TimeSpan -Seconds $RefreshInterval
